@@ -2,7 +2,7 @@
   "name": "csdn-killer",
   "displayName": "Csdn killer",
   "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
+  "description": "Automatically filter CSDN results from Google search",
   "author": "Plasmo Corp. <foss@plasmo.com>",
   "scripts": {
     "dev": "plasmo dev",
@@ -26,6 +26,11 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess",
+      "activeTab"
     ]
   }
 }
